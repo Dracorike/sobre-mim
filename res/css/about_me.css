@@ -33,8 +33,8 @@ body {
     height: 100%;
     width: 100%;
     justify-content: center;
-    border-right: 2px solid black;
-    border-left: 2px solid black;
+    border-right: 1px solid rgb(80, 79, 79);
+    border-left: 1px solid rgb(80, 79, 79);
 }
 
 nav {
@@ -45,7 +45,7 @@ nav {
 .navigation-bar {
     list-style-type: none;
     margin: 0;
-    background-color: gray;
+    background-color: black;
     height: 50px;
     align-items: center;
     justify-self: center;
