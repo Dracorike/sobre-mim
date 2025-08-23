@@ -1,8 +1,54 @@
+* {
+    color: aliceblue;
+}
+
 body {
     background-color: black;
-
+    margin: 20px;
 }
 
 p {
-    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+a {
+    color: aqua;
+}
+
+h1 {
+    color: orangered;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: x-large;
+}
+
+h3 {
+    color: rgb(136, 197, 247);
+}
+
+.quick-profile-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.quick-profile-field {
+    color: rgb(199, 126, 247);
+}
+
+#profile-pic {
+    border: 10px solid orangered;
+    height: 200px;
+    width: 250px;
+    border-radius: 8px;
+}
+
+#profile-info {
+    margin-left: 20px;
+
+}
+
+#qualifications-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 60%;
 }
