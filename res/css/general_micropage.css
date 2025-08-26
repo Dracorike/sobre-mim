@@ -25,3 +25,26 @@ h3 {
 ul, ol {
     color: aliceblue;
 }
+
+.card-text-description-container {
+    margin: 0;
+    padding-left: 0;
+    list-style: none;
+    font-size: small;
+    font-weight: 200;
+    color: #FFFEDF;
+}
+
+.card-container {
+    background-color: #2A2C31;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    width: 30vw;
+}
+
+.card-title {
+    font-size: large;
+    font-weight: 700;
+    color: #DFBA69;
+}
