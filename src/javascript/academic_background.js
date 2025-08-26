@@ -15,28 +15,28 @@ const academicBackground = [
 
 const complementaryCourses = [
     {
-        "titulo": "Desenvolvimento Flutter para apps Android e iOS",
+        "title": "Desenvolvimento Flutter para apps Android e iOS",
         "diploma": "Certificado de conclusão de curso",
-        "estado": "COMPLETE",
-        "instituicao": "Udemy"
+        "status": "COMPLETE",
+        "educational-institution": "Udemy"
     },
     {
-        "titulo": "Spring Boot Expert: JPA RESTFul API Security JWT",
+        "title": "Spring Boot Expert: JPA RESTFul API Security JWT",
         "diploma": "Certificado de conclusão de curso",
-        "estado": "COMPLETE",
-        "instituicao": "Udemy Business"
+        "status": "COMPLETE",
+        "educational-institution": "Udemy Business"
     },
     {
-        "titulo": "Everis Android/Kotlin Developer",
+        "title": "Everis Android/Kotlin Developer",
         "diploma": "Certificado de conclusão de curso",
-        "estado": "COMPLETE",
-        "instituicao": "Digital Innovation One (DIO)"
+        "status": "COMPLETE",
+        "educational-institution": "Digital Innovation One (DIO)"
     },
     {
-        "titulo": "Testes Unitarios em Java com Junit e Mockito",
+        "title": "Testes Unitarios em Java com Junit e Mockito",
         "diploma": "Certificado de conclusão de curso",
-        "estado": "COMPLETE",
-        "instituicao": "Udemy Business"
+        "status": "COMPLETE",
+        "educational-institution": "Udemy Business"
     }
 ]
 
@@ -50,7 +50,7 @@ function populateAcademicBackgroundToList() {
             <ul class="card-text-description-container">
                 <li class="card-title">${academicBackgroundData["course-name"]}</li>
                 <li>Diploma - ${academicBackgroundData["diploma"]}</li>
-                <li>Estado atual - ${academicBackgroundData["ACTIVE"]}</li>
+                <li>Estado atual - ${academicBackgroundData.status}</li>
                 <br>
                 <li>Instituição de ensino - ${academicBackgroundData["educational-institution"]}</li>
             </ul>
@@ -61,19 +61,24 @@ function populateAcademicBackgroundToList() {
 }
 
 function populateComplementaryCourses() {
-
+    const complementaryCoursesListContainer = document.querySelector('#complementary-courses-list')
+    complementaryCourses.forEach(course => {
+        complementaryCoursesListContainer.insertAdjacentHTML(
+            "beforeend",
+            `
+            <div class="card-container">
+                <ul class="card-text-description-container">
+                    <li class="card-title">${course.title}</li>
+                    <li>Diploma - ${course.diploma}</li>
+                    <li>Estado atual - ${course.status}</li>
+                    <br>
+                    <li>Instituição de ensino - ${course["educational-institution"]}</li>
+                </ul>
+            </div>
+            `
+        )
+    });
 }
 
 populateAcademicBackgroundToList();
-
-/*
-        <div class="card-container">
-            <ul class="card-text-description-container">
-                <li class="card-title">Título do curso - Bacharelado em Engenharia de Software</li>
-                <li>Diploma - Ensino superior</li>
-                <li>Estado atual - Cursando</li>
-                <br>
-                <li>Instituição de ensino - Uninter</li>
-            </ul>
-        </div>
-*/
+populateComplementaryCourses();
