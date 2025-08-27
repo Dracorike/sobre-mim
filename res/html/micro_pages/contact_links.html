@@ -1,11 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="../../css/general_micropage.css" />
+    <link rel="stylesheet" href="../../css/contact_link.css" />
 </head>
+
 <body>
-    <h1>Contact links</h1>
+    <h1>Entre em contato comigo!</h1>
+    <p>Sinta-se a vontade para mandar mensagens para mim. Estarei aguardando seu contato.</p>
+    <section>
+        <form class="contact-form-container" id="message-form">
+            <div class="input-container">
+                <label class="label-title">Nome Completo</label>
+                <input type="text" placeholder="Digite seu nome completo" id="full-name" class="text-input-field" name="name" required/>
+            </div>
+            <div class="input-container">
+                <label class="label-title">Endereço de e-mail</label>
+                <input type="text" placeholder="exemplo@host.com" id="email-address" class="text-input-field" name="email" required/>
+            </div>
+            <div class="input-container">
+                <label class="label-title">Endereço de e-mail</label>
+                <textarea rows="10" placeholder="Digite a sua mensagem aqui..." id="message-text" name="message" required></textarea>
+            </div>
+            <div class="button-container">
+                <button class="action-button" type="submit">Enviar</button>
+            </div>
+        </form>
+    </section>
+    <script src="../../../src/javascript/contact_links.js"></script>
 </body>
+
 </html>

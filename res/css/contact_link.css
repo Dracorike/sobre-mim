@@ -1,0 +1,29 @@
+.label-title {
+    margin-bottom: 10px;
+    color: rgb(136, 197, 247);
+}
+
+.input-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+.contact-form-container {
+    background-color: #2A2C31;
+    padding: 20px;
+    width: 50%;
+    border-radius: 5px;
+}
+
+.button-container {
+    display: flex;
+    flex-direction: row-reverse;
+    margin-top: 20px;
+}
+
+.action-button {
+    padding: 8px 16px;
+    background-color: rgb(136, 197, 247);
+    border-color: rgb(136, 197, 247);
+}
