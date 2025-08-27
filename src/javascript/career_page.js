@@ -29,6 +29,7 @@ const jobList = [
     }
 ];
 
+// Função para popular a lista de carreiras utilizando a constante "jobList"
 function populateCareerList() {
     const careerListContainer = document.getElementById('career-card-list');
     jobList.forEach(job => {
@@ -50,25 +51,3 @@ function populateCareerList() {
 }
 
 populateCareerList()
-/**
- *     {
-        "title": "Desenvolvedor Android",
-        "enterprise": "Capgemini",
-        "period": "Mar/2022 - Jun/2023",
-        "location": "Remoto",
-        "type": "CLT"
-    }
- */
-
-/**
- * 
- *         <div class="card-container">
-            <ul class="card-text-description-container">
-                <li class="card-title">Título do curso - Bacharelado em Engenharia de Software</li>
-                <li>Diploma - Ensino superior</li>
-                <li>Estado atual - Cursando</li>
-                <br>
-                <li>Instituição de ensino - Uninter</li>
-            </ul>
-        </div>
- */

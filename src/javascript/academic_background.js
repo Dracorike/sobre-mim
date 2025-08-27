@@ -40,6 +40,7 @@ const complementaryCourses = [
     }
 ]
 
+// Essa função faz a população da minha formação acadêmica usando a constante "academicBackground", criando uma lista dinâmica.
 function populateAcademicBackgroundToList() {
     const backgroundListContainer = document.querySelector('#academic-background-list');
     academicBackground.forEach(academicBackgroundData => {
@@ -60,6 +61,7 @@ function populateAcademicBackgroundToList() {
     });
 }
 
+// Essa função popula a lista dinâmica dos meus cursos complementares.
 function populateComplementaryCourses() {
     const complementaryCoursesListContainer = document.querySelector('#complementary-courses-list')
     complementaryCourses.forEach(course => {
@@ -80,5 +82,7 @@ function populateComplementaryCourses() {
     });
 }
 
+// Aqui é feita a chamada das funções para popular as lista.
+// Decidi separar em funções visando o clean code.
 populateAcademicBackgroundToList();
 populateComplementaryCourses();
