@@ -2,13 +2,13 @@ const academicBackground = [
     {
         "course-name": "Bacharelado em Engenharia de Software",
         "diploma": "Ensino superior",
-        "status": "ACTIVE",
+        "status": "Cursando",
         "educational-institution": "UNINTER Centro Universitário Internacional"
     },
     {
         "course-name": "Ensino Médio",
         "diploma": "Ensino Médio",
-        "status": "COMPLETE",
+        "status": "Completo",
         "educational-institution": "ECIT José Braz do Rêgo"
     }
 ]
@@ -17,25 +17,25 @@ const complementaryCourses = [
     {
         "title": "Desenvolvimento Flutter para apps Android e iOS",
         "diploma": "Certificado de conclusão de curso",
-        "status": "COMPLETE",
+        "status": "Completo",
         "educational-institution": "Udemy"
     },
     {
         "title": "Spring Boot Expert: JPA RESTFul API Security JWT",
         "diploma": "Certificado de conclusão de curso",
-        "status": "COMPLETE",
+        "status": "Completo",
         "educational-institution": "Udemy Business"
     },
     {
         "title": "Everis Android/Kotlin Developer",
         "diploma": "Certificado de conclusão de curso",
-        "status": "COMPLETE",
+        "status": "Completo",
         "educational-institution": "Digital Innovation One (DIO)"
     },
     {
         "title": "Testes Unitarios em Java com Junit e Mockito",
         "diploma": "Certificado de conclusão de curso",
-        "status": "COMPLETE",
+        "status": "Completo",
         "educational-institution": "Udemy Business"
     }
 ]
