@@ -1,4 +1,4 @@
-const MICRO_PAGES_PATH = '../../res/html/micro_pages'
+const MICRO_PAGES_PATH = 'res/html/micro_pages'
 
 // Separei nessa página os clicks dos botões de menu.
 
