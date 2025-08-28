@@ -1,6 +1,5 @@
 body {
     margin: 0px;
-    background-color: black;
 }
 
 .container {
@@ -27,6 +26,7 @@ Link para o site: https://www.pexels.com/pt-br
 
 .content-container, .container {
     height: 100%;
+    background-color: black;
 }
 
 #pageTitle {
