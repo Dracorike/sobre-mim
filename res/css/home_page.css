@@ -54,6 +54,7 @@ nav {
     margin: 0;
     background-color: black;
     height: 50px;
+    width: 100%;
     align-items: center;
     justify-self: center;
     display: flex;
@@ -76,6 +77,11 @@ a {
 a:hover {
     background-color: aqua;
     color: black;
+    cursor: pointer;
+}
+
+a li:hover {
+    cursor: pointer;
 }
 
 li {
